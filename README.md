@@ -1,5 +1,8 @@
 # rbac
-Implementation of rbac spec ANSI INCITS 359-2004
+
+Role based Acess Control
+
+**NOTE**: _Still under heavy development._
 
 ## Literature material
 
