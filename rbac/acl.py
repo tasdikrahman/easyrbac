@@ -18,8 +18,6 @@
 
 """
 
-from .model import Role, User
-
 
 class AccessControlList(object):
     """Defines the detailed access control rules

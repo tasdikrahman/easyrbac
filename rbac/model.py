@@ -4,20 +4,6 @@
 # @http://tasdikrahman.me
 # @https://github.com/prodicus
 
-"""
-    Role Based Access Control:
-
-    Implementing a role based auth system. System should be able to assign a role to user and remove a user from the role.
-
-    Entities are USER, ACTION TYPE, RESOURCE, ROLE
-
-    ACTION TYPE defines the access level(Ex: READ, WRITE, DELETE)
-
-    Access to resources for users are controlled strictly by the role.One user can have multiple roles. 
-    Given a user, action type and resource system should be able to tell whether user has access or not.
-
-"""
-
 
 class Role(object):
     """roles which are associated to permissions to access resources
@@ -60,19 +46,24 @@ class User(object):
         """Adds the role to this user
         
         :param role: the role to be assigned to the user
-        :return: 
         """
         self.roles.extend(role)
 
+    def get_roles(self):
+        """Returns a generator object for the roles held by the User
+        """
+        for role in self.roles.copy():
+            yield role
 
-    def remove_role(self, role):
-        """
+    def remove_role(self, role_name):
+        """Remove a role assigned to a User
         
-        :param role: 
-        :return: 
+        :param role_name: name of the role which needs to be removed 
         """
-        pass
+        for role in self.get_roles():
+            if role.get_name() == role_name:
+                self.roles.remove(role)
 
     def __repr__(self):
-        return '<User %s>' % self.name
+        return '<User %s>' % self.roles
 
