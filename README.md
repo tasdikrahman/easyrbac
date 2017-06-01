@@ -63,6 +63,13 @@ for user_role in [role.get_name() for role in everyone_user.get_roles()]:
         assert acl.is_delete_allowed(user_role, 'DELETE', '/api/v1/employee/1/') == False
 ```
 
+## Tests
+
+`easyrbac` uses `py.test` for running the tests, running which is as simple as doing a
+
+```bash
+$ py.test
+```
 
 ## TODO
 
@@ -82,6 +89,12 @@ You can submit the issues on the issue tracker [here](https://github.com/prodicu
 - [https://pythonhosted.org/Flask-Principal/](https://pythonhosted.org/Flask-Principal/)
 - [https://iamfortress.net/2014/11/24/using-role-for-access-control-is-not-rbac/](https://iamfortress.net/2014/11/24/using-role-for-access-control-is-not-rbac/)
 - [http://cloudify.co/2016/04/15/simple-secure-role-based-access-control-rest-api-rbac-server-devops-cloud-orchestration.html](http://cloudify.co/2016/04/15/simple-secure-role-based-access-control-rest-api-rbac-server-devops-cloud-orchestration.html)
+
+## RBAC in simple terms
+
+<p align="center">
+  <img src="http://tasdikrahman.me/content/images/2017/06/rbac_model.jpg" alt="rbac"/>
+</p>
 
 ## LICENSE
 
