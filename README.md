@@ -1,8 +1,10 @@
 # easyrbac
 
-[![Build Status](https://travis-ci.org/prodicus/rbac.svg?branch=master)](https://travis-ci.org/prodicus/rbac)
+[![Build Status](https://travis-ci.org/prodicus/easyrbac.svg?branch=master)](https://travis-ci.org/prodicus/rbac)
 
 Role based Access Control implementation using the standard library
+
+I wrote a little piece [on medium about it](https://medium.com/@tasdikrahman/implementing-role-based-access-control-a2bbcb4dfdb0) if you are interested on reading.
 
 **NOTE**: _Still under heavy development._
 
@@ -95,6 +97,10 @@ You can submit the issues on the issue tracker [here](https://github.com/prodicu
 <p align="center">
   <img src="http://tasdikrahman.me/content/images/2017/06/rbac_model.jpg" alt="rbac"/>
 </p>
+
+# Links
+
+- [medium blog post](https://medium.com/@tasdikrahman/implementing-role-based-access-control-a2bbcb4dfdb0)
 
 ## LICENSE
 
