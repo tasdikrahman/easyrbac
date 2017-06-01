@@ -18,16 +18,16 @@
 
 """
 
-
 class AccessControlList(object):
     """Defines the detailed access control rules
+    
+    If a role is not given an explicit resource authorisation, it's rejected by default. Rule of Least privileges.
     """
 
     def __init__(self):
         self._read = []
         self._write = []
         self._delete = []
-        self._exempt = []
 
     def resource_read_rule(self, role, method, resource):
         """Add rules to allow read access
@@ -62,17 +62,6 @@ class AccessControlList(object):
         if permission not in self._delete:
             self._delete.append(permission)
 
-    def resource_exempt_rule(self, view_function):
-        """
-        Add rules to define resources which do not require checks. READ, WRITE, DELETE rules allowed by default.
-        
-        :param role: Role of this rule
-        :param method: REST verbs allowed to access resource. Include GET, PUT et al.
-        :param resource: The resource in question
-        """
-        if view_function not in self._exempt:
-            self._exempt.append(view_function)
-
     def is_read_allowed(self, role, method, resource):
         """returns whether the role is allowed READ access resource
         :return: Boolean
@@ -90,9 +79,3 @@ class AccessControlList(object):
         :return: Boolean
         """
         return (role, method, resource) in self._delete
-
-    def is_exempted(self, view_function):
-        """returns whether the view function is exempted from checks
-        :return: Boolean
-        """
-        return view_function in self._exempt

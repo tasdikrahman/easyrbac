@@ -30,7 +30,6 @@ class Role(object):
         return '<Role %s>' % self.name
 
 
-
 class User(object):
     """A role gets assigned to a user
     """
@@ -66,4 +65,3 @@ class User(object):
 
     def __repr__(self):
         return '<User %s>' % self.roles
-
