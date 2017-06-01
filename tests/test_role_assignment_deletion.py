@@ -7,7 +7,7 @@
 """Testing assignment and deletion of a Role to User
 """
 
-from rbac import Role, User
+from easyrbac import Role, User
 
 
 default_role = Role('default')

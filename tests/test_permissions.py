@@ -4,7 +4,7 @@
 # @http://tasdikrahman.me
 # @https://github.com/prodicus
 
-from rbac import AccessControlList, User, Role
+from easyrbac import AccessControlList, User, Role
 
 everyone_role = Role('everyone')
 admin_role = Role('admin')

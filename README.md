@@ -9,7 +9,7 @@ Role based Access Control
 ### Role creation and assignment of role to a User
 
 ```python
-from rbac import Role, User
+from easyrbac import Role, User
 
 
 default_role = Role('default')
@@ -22,7 +22,7 @@ admin_user = User(roles=[admin_role, default_role])
 ### User resource access permissions allocation
 
 ```python
-from rbac import AccessControlList, User, Role
+from easyrbac import AccessControlList, User, Role
 
 everyone_role = Role('everyone')
 admin_role = Role('admin')
@@ -62,7 +62,7 @@ for user_role in [role.get_name() for role in everyone_user.get_roles()]:
 
 ## Issues
 
-You can submit the issues on the issue tracker [here](https://github.com/prodicus/rbac/)
+You can submit the issues on the issue tracker [here](https://github.com/prodicus/rbac/issues)
 
 ## Literature material
 

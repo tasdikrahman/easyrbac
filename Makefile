@@ -11,6 +11,9 @@ clean:
 tests: clean
 	py.test
 
+pypi-upload: clean tests
+    python setup.py register sdist upload -r https://www.python.org/pypi
+
 .PHONY: help
 help:
 	@echo "\nPlease call with one of these targets:\n"
