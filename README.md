@@ -13,7 +13,7 @@ I wrote a little piece [on medium about it](https://medium.com/@tasdikrahman/imp
 ```bash
 $ mkvirtualenv rbac
 $ workon rbac
-(rbac)$ pip install rbac
+(rbac)$ pip install easyrbac
 ```
 
 ## Demo
