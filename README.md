@@ -1,6 +1,8 @@
-# rbac
+# easyrbac
 
-Role based Access Control
+[![Build Status](https://travis-ci.org/prodicus/rbac.svg?branch=master)](https://travis-ci.org/prodicus/rbac)
+
+Role based Access Control implementation using the standard library
 
 **NOTE**: _Still under heavy development._
 
