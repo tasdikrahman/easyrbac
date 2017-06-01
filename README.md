@@ -6,6 +6,14 @@ Role based Access Control implementation using the standard library
 
 **NOTE**: _Still under heavy development._
 
+## Installation
+
+```bash
+$ mkvirtualenv rbac
+$ workon rbac
+(rbac)$ pip install rbac
+```
+
 ## Demo
 
 ### Role creation and assignment of role to a User
@@ -60,7 +68,7 @@ for user_role in [role.get_name() for role in everyone_user.get_roles()]:
 
 - [ ] Adding hierarchical roles, which represent parent<->child relations
 - [ ] Adding this on top of Bottle/Flask
-- [ ] Make it `pip` installable
+- [x] Make it `pip` installable
 
 ## Issues
 

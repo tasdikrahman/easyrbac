@@ -6,3 +6,5 @@
 
 from .acl import AccessControlList
 from .model import User, Role
+
+__version__ = '0.1.0'
