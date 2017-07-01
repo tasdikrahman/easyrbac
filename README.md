@@ -1,6 +1,6 @@
 # easyrbac
 
-[![Build Status](https://travis-ci.org/prodicus/easyrbac.svg?branch=master)](https://travis-ci.org/prodicus/rbac)
+[![Build Status](https://travis-ci.org/tasdikrahman/easyrbac.svg?branch=master)](https://travis-ci.org/tasdikrahman/rbac)
 
 Role based Access Control implementation using the standard library
 
@@ -81,7 +81,7 @@ $ py.test
 
 ## Issues
 
-You can submit the issues on the issue tracker [here](https://github.com/prodicus/rbac/issues)
+You can submit the issues on the issue tracker [here](https://github.com/tasdikrahman/rbac/issues)
 
 ## Literature material
 

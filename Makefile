@@ -2,7 +2,7 @@
 # @Author: Tasdik Rahman
 # @GPLv3 License
 # @http://tasdikrahman.me
-# @https://github.com/prodicus
+# @https://github.com/tasdikrahman
 
 clean:
 	-find . -name '*.pyc' -delete

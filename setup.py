@@ -3,7 +3,7 @@
 # @Author: Tasdik Rahman
 # @GPLv3 License
 # @http://tasdikrahman.me
-# @https://github.com/prodicus
+# @https://github.com/tasdikrahman
 
 from setuptools import setup, find_packages
 from codecs import open
@@ -22,8 +22,8 @@ setup(
     version=__version__,
     description='easyrbac: Role Based Access Control for humans',
     long_description=long_description,
-    url='https://github.com/prodicus/easyrbac',
-    download_url='https://github.com/prodicus/easyrbac/tarball/' + __version__,
+    url='https://github.com/tasdikrahman/easyrbac',
+    download_url='https://github.com/tasdikrahman/easyrbac/tarball/' + __version__,
     license='GPLv3',
     classifiers=[
       'Development Status :: 3 - Alpha',
